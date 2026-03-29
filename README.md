@@ -52,12 +52,6 @@ Open the popup, find the domain in **Locked Domains**, and click **Remove**.
 
 ---
 
-## Safari
-
-Safari can run Web Extensions, but setup is different from Chrome. See **[SAFARI.md](./SAFARI.md)** for temporary install and Xcode packaging options.
-
----
-
 ## Permissions (why they’re needed)
 
 | Permission        | Purpose |
@@ -75,9 +69,3 @@ Safari can run Web Extensions, but setup is different from Chrome. See **[SAFARI
 This project was **fully vibe-coded**—built quickly with AI assistance and iteration rather than a formal security audit. It may contain bugs, rough edges, or unexpected behavior in edge cases. **Do not rely on it as your only line of defense for high-risk scenarios**; treat it as a helpful friction layer for focus or casual blocking, not a certified security product.
 
 If something feels off, file an issue or patch it; assume there could be a glitch somewhere.
-
----
-
-## License
-
-No license is specified in this repository; add one if you plan to share or reuse the code.
