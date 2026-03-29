@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>System Gate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="lock">
+    <div class="scanlines"></div>
+    <div class="glitch-overlay" aria-hidden="true">
+      <div class="glitch-text">BREACH DETECTED</div>
+      <div class="glitch-text alt">SYSTEM LOCKDOWN</div>
+      <div class="glitch-text alt2">ACCESS DENIED</div>
+      <div id="glitchRain" class="glitch-rain"></div>
+      <div id="glitchWall" class="glitch-wall"></div>
+    </div>
+    <main class="lock-shell">
+      <header class="lock-header">
+        <div class="sig">NX-CORE</div>
+        <div class="pulse">AUTHORIZED ACCESS REQUIRED</div>
+      </header>
+
+      <section class="lock-card">
+        <h1>SECURITY CONSOLE</h1>
+        <p class="muted">Target: <span id="domainName"></span></p>
+
+        <div id="notice" class="notice hidden"></div>
+
+        <label class="label" for="password">Access Key</label>
+        <input id="password" type="password" autocomplete="current-password" placeholder="Enter access key" />
+
+        <button id="unlockBtn" class="primary">Override</button>
+
+        <div class="meta">
+          <p class="muted">Remaining attempts: <span id="remaining">3</span></p>
+          <p id="warning" class="warning hidden">Warning: next failure purges local data and history.</p>
+        </div>
+      </section>
+
+      <footer class="lock-footer">
+        <span>Connection: Secure</span>
+        <span>Mode: Stealth</span>
+      </footer>
+    </main>
+
+    <script src="lock.js"></script>
+  </body>
+</html>

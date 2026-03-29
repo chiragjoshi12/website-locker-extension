@@ -1,0 +1,29 @@
+{
+  "name": "Website Locker",
+  "description": "Lock specific domains with a password.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Website Locker",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "webNavigation",
+    "history",
+    "browsingData"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["lock.html", "style.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
